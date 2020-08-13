@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 const Header = () => {
   return (
 
-    <Container fluid className=" p-0 m-0">
+    <Container id="inicio" fluid className="container-principa p-0 m-0">
       <div className="image">
 
       </div>

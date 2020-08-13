@@ -4,7 +4,7 @@ import "../components/styles.css"
 
 import { Container ,Col ,Button} from "react-bootstrap";
 const Main = () => (
-  <Container className=" h-100">
+  <Container className=" h-auto  ">
       
       <Col className="d-flex flex-column align-items-center ">
       <h1 className="text-center font-weight-bold text-white shadow-h1">Bienvenido a Code and Coffee</h1>
