@@ -1,0 +1,35 @@
+.container-fluid{
+    /*imagen de fonde de seccion principal*/
+   
+    background-image: url("../images/principal.jpg")  ;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top ;
+    position: absolute;
+    filter: blur(3px) brightness(0.7) ;
+}
+.image{
+    background-color:#5f4385d3;
+    opacity: 0.6;
+    height: 100vh;
+
+}
+.shadow-h1{
+    text-shadow: 6px 3px 8px #000000
+}
+.shadow-h4{
+    text-shadow: 2px 2px 3px #000000
+}
+.btn-start{
+    /*boton empezar*/
+    font-weight: bolder;
+    border: 2px solid  white;
+}
+.btn-start:hover{
+    background-color: #5f4385 !important;
+    box-shadow: 3px 3px 12px black;
+    border: 1px solid white;
+}
+
+

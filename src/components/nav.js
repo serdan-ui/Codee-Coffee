@@ -1,41 +1,42 @@
 import React from "react"
 import { Link } from "gatsby"
-import styled from "@emotion/styled";
 import { Navbar ,Nav , NavDropdown ,Form ,FormControl , Button} from "react-bootstrap";
+import Logo from "../images/marca-y-logo.png"
 
 
 const Navegacion = () => {
   return (
     
-<Navbar bg="light" expand="lg" className="py-3" >
-  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto ">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#link">Link</Nav.Link>
-      <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
-    <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-success">Search</Button>
-    </Form>
-  </Navbar.Collapse>
+<>
+<Navbar collapseOnSelect expand="lg" bg="transparent" variant="dark" className="ml-5 mr-5" >
+<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+<Navbar.Brand href="/" className="mr-0 ml-5">
+<img
+
+        alt="logo"
+        src={Logo}
+        width="300"
+        height="350"
+        className="d-inline-block  ml-5 "
+      />{' '}
+
+</Navbar.Brand>
+ <Navbar.Collapse id="responsive-navbar-nav ">
+
+<Nav className="ml-auto mr-5 mb-5 w-50 d-flex justify-content-between  " 
+>
+<Nav.Link href="#home" className="btn btn-primary btn-sm text-dark rounded-pill pl-4  pr-4">Inicio</Nav.Link>
+      <Nav.Link href="#link" className="text-white w-25 shadow-h4">Nosotros</Nav.Link>
+      <Nav.Link href="#link" className="text-white w-25 shadow-h4">Proyectos</Nav.Link>
+      <Nav.Link href="#link" className="text-white w-25 shadow-h4">Servicios</Nav.Link>
+      <Nav.Link href="#link" className="text-white w-25 shadow-h4">Contacto</Nav.Link>
+</Nav>
+</Navbar.Collapse>
 </Navbar>
+
+
+     </>
   )
 }
 
 export default Navegacion
-{/* <Nav>
-      <NavLink to={"/"}
-      activeClassName="pagina-actual"
-      >Inicio</NavLink>
-      <NavLink to={"/nosotros"}
-      activeClassName="pagina-actual">Nosotros</NavLink>
-    </Nav> */}

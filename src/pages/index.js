@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../components/layout";
-
-import ImagenHotel from "../components/imagenHotel";
-import ContenidoInicio from "../components/contenidoInicio";
+import "../components/styles.css"
+import Nav from "../components/nav"
+import Main from "../components/main";
 
 const IndexPage = () => (
   <Layout>
-   
-    
+    <Nav />
+    <Main/>
   </Layout>
 )
 
